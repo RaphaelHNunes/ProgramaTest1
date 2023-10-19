@@ -58,17 +58,23 @@
 
 //Nesse cosigo foi  feito uma leitura de dados 
 
-class LeituraDeDados
-{
-    static void Main()
-    {
-        Console.WriteLine("Qual seu nome ?");
-        string? nome = Console.ReadLine();
-        Console.WriteLine("Quantos anos voce tem?");
-        int idade = int.Parse(Console.ReadLine());
-        Console.WriteLine("Quantos irmãos voce tem?");
-        int irmao = int.Parse(Console.ReadLine());
+//class LeituraDeDados
+//{
+//    static void Main()
+//    {
+//        Console.WriteLine("Qual seu nome ?");
+//        string? nome = Console.ReadLine();
+//        Console.WriteLine("Quantos anos voce tem?");
+//        int idade = int.Parse(Console.ReadLine());
+//        Console.WriteLine("Quantos irmãos voce tem?");
+//        int irmao = int.Parse(Console.ReadLine());
 
-        Console.WriteLine("seu nome é {0} é a sua idade é {1}, e voce tem {2} Irmão. ", nome, idade, irmao);
-    }
-}
+//        Console.WriteLine("seu nome é {0} é a sua idade é {1}, e voce tem {2} Irmão. ", nome, idade, irmao);
+//    }
+//}
+
+var idade = 25;
+var salario = 1285.76;
+
+
+Console.WriteLine("Idade {0}, Salario {1}", idade, salario); 
