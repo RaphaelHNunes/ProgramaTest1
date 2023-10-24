@@ -37,15 +37,84 @@
 //Console.WriteLine(n1);
 //Console.WriteLine(n2-- == ++n1);
 
-// estruturas de controle - IF/ELSE 
 
-var n1 = 5;
-var n2 = 9;
-var n3 = 10;
-if (n1 < n2){
-    Console.WriteLine(n1 + n2);
-}
-if (n3 < n2)
+//ESTRUTURAS DE CONTROLE IF/ELSE
+//As ações que serão executadas devem estar entre as chaves que são abertas após a imposição das condições. 
+
+//var n1 = 5;
+//var n2 = 9;
+//var n3 = 10;
+//if (n1 < n2){
+//    Console.WriteLine(n1 + n2);
+//}
+//if (n3 < n2)
+//{
+//    Console.WriteLine(n3+n2);
+//}
+// nesse caso foi verificado que se o valor for menor que o outro, aparece na tela caso contrario não. 
+
+//ELSE 
+
+
+//var n1 = 5;
+//var n2 = 9;
+//var n3 = 10;
+//if (n1 < n2)
+//{
+//    Console.WriteLine("condição 1 é satisfeita !!");
+//    Console.WriteLine("resultado da soma é {0}", n1 + n2);
+//}
+//else if (n3 < n2)
+//{
+//    Console.WriteLine(n3 + n2);
+
+//    Console.WriteLine("condição 2 não é satisfeita !!");
+//}
+
+// ESTRUTURA SWITCH 
+//O SWITCH FUNCIONA PARECIDO COM O IF MAS A PARTIR DE ESCOLHAS. 
+
+//Console.WriteLine("Qual a nota que voce dar para o prato? 0, 5 ou 10");
+//int.TryParse(Console.ReadLine(), out int nota);
+//switch (nota)
+//{
+//    case 0:
+//        Console.WriteLine("comida muito ruim");
+//        break;
+//    case 5:
+//        Console.WriteLine("comida razoavel");
+//        break;
+//    case 10:
+//        Console.WriteLine("comida muito boa");
+//        break;
+//    default:
+//        Console.WriteLine("Nota inexistente");
+//        break;
+//}
+
+//ESTRUTURA DE CONTROLE - WHILE
+//var n1 = 1;
+//while (n1 <= 15)
+//{
+//    Console.WriteLine(n1);
+//    n1= n1+1; 
+//}
+
+int senha;
+string textoDoUsuario;
+Console.WriteLine("Qual a senha ? ");
+textoDoUsuario = Console.ReadLine();
+senha = Convert.ToInt32(textoDoUsuario);
+switch(senha) 
 {
-    Console.WriteLine(n3+n2); // nesse caso foi verificado que se o valor for menor que o outro, aparece na tela caso contrario não. 
-}
+    case 1011:
+        Console.WriteLine("SENHA CORRETA\nCONECTADO - BEM VINDO");
+        break;
+    case 1234:
+        Console.WriteLine("SENHA INCORRETA");
+        break;
+    default:
+        Console.WriteLine("NAO CORRESPONDE");
+        break;
+        
+ }
