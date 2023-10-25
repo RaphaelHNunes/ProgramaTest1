@@ -93,28 +93,37 @@
 //}
 
 //ESTRUTURA DE CONTROLE - WHILE
-//var n1 = 1;
-//while (n1 <= 15)
+int n1 = 1; 
+
+while (n1 <= 15)
+{
+    Console.WriteLine(n1);
+    n1 = n1 + 1;
+}
+
+// projeto criado por mim para acessar um certo sistema ultilizando a senha correta. 
+
+//int senha;
+//string textoDoUsuario;
+//Console.WriteLine("Qual a senha ? ");
+//textoDoUsuario = Console.ReadLine();
+//senha = Convert.ToInt32(textoDoUsuario);
+//switch(senha) 
+//{
+//    case 1011:
+//        Console.WriteLine("SENHA CORRETA\nCONECTADO - BEM VINDO");
+//        break;
+//    case 1234:
+//        Console.WriteLine("SENHA INCORRETA");
+//        break;
+//    default:
+//        Console.WriteLine("NAO CORRESPONDE");
+//        break;
+
+// }
+// estrutura For 
+
+//for (int n1 = 1; n1 <= 10; n1++)
 //{
 //    Console.WriteLine(n1);
-//    n1= n1+1; 
 //}
-
-int senha;
-string textoDoUsuario;
-Console.WriteLine("Qual a senha ? ");
-textoDoUsuario = Console.ReadLine();
-senha = Convert.ToInt32(textoDoUsuario);
-switch(senha) 
-{
-    case 1011:
-        Console.WriteLine("SENHA CORRETA\nCONECTADO - BEM VINDO");
-        break;
-    case 1234:
-        Console.WriteLine("SENHA INCORRETA");
-        break;
-    default:
-        Console.WriteLine("NAO CORRESPONDE");
-        break;
-        
- }
